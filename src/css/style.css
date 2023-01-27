@@ -29,6 +29,8 @@ main {
     background-color: var(--White);
     border-radius: 10px;
     overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .container__main img {
@@ -119,39 +121,19 @@ footer {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 560px) {
-    .container__main {
-        text-align: center;
-    }
-    
-    .conteudo__main .preco {
-        justify-content: center;
-    }
-
-    .conteudo__main {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    .conteudo__main .botao {
-        width: 50%;
-        margin: 10px auto;
-    }
-}
-
-
-@media (min-width: 992px) {
-
+@media (min-width: 780px) {
     .container__main {
         display: grid;
         grid-template-columns: auto auto;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 100px;
     }
 
     .container__main img {
         background-size: cover;
-        min-width: 400px;
         min-height: 100%;
+        min-width: 400px;
     }
-
 }
+
